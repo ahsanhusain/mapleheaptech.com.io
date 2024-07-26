@@ -11,8 +11,10 @@ function toggleFab() {
     $('.chat-container .fab').toggleClass('is-visible');
     if ($('.chat-container .prime').hasClass('fa-close')) {
         showChat();
+        $('.chat-container #prime').addClass('d-none')
     } else {
         hideChat();
+        $('.chat-container #prime').removeClass('d-none')
     }
 }
 function hideChat() {

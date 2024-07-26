@@ -139,4 +139,17 @@ function getVisitMHChatResponse(userQuery) {
     }
 }
 
+function checkDeviceWidth() {
+    const width = window.innerWidth;
+    if (width <= 480) {
+        console.log(`Mobile device detected with width: ${width} pixels`);
+        $('.chat-container .fabs').addClass('h-100');
+    } else {
+        $('.chat-container .fabs').removeClass('h-100');
+    }
+}
+
 startVisitMHChat();
+
+// Check the width on page load
+checkDeviceWidth();
