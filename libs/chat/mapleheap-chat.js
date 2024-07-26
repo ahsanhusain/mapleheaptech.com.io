@@ -131,8 +131,8 @@ function getVisitMHChatResponse(userQuery) {
         }
         if(obj.suggestions.length === 0) {
             robot += `<div class="chat-suggestion" onclick="startVisitMHChat();">I want to start over.</div>`;
-            robot += `<div class="chat-suggestion" onclick="window.location.href = '/index.html#faqs';">I want to go to FAQs section.</div>`;
-            robot += `<div class="chat-suggestion" onclick="window.location.href = '/contact-us.html';">I want to get more information by contacting you.</div>`;
+            robot += `<div class="chat-suggestion" onclick="window.location.href = './index.html#faqs';">I want to go to FAQs section.</div>`;
+            robot += `<div class="chat-suggestion" onclick="window.location.href = './contact.html';">I want to get more information by contacting you.</div>`;
         }
         robotSpan.innerHTML = robot;
         chatContainer.appendChild(robotSpan);
