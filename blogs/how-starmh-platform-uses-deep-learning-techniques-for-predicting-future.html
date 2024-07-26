@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>How StarMH platform uses Deep Learning techniques for predicting future | MapleHeap Technologies</title>
+<meta name="description" content="How does Starmh leverage Deep Learning? Discover the power of predicting future trends within the Starmh platform. Read now!">
+
+        <link rel="icon" href="../assets/img/icon.png">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../assets/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+        <link href="../libs/fontawesome/css/fontawesome.css" rel="stylesheet" />
+        <link href="../libs/fontawesome/css/brands.css" rel="stylesheet" />
+        <link href="../libs/fontawesome/css/solid.css" rel="stylesheet" />
+        <link href="../libs/chat/chat.css" rel="stylesheet" type="text/css"/>
+                
+        <!-- custom style  -->
+        <link rel="stylesheet" href="../css/style.css">
+
+        <script type="application/ld+json">
+            {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "MapleHeap Technologies",
+            "url": "https://mapleheaptech.com/",
+            "logo": "",
+            "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "",
+            "contactType": "customer service",
+            "areaServed": "CA",
+            "availableLanguage": "en"
+            },
+            "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "#60-180, 94 Ave, S.E, Calgary, AB T2J 3G8 ",
+            "addressLocality": "Calgary",
+            "postalCode": "T2J 3G8",
+            "addressRegion": "Alberta",
+            "addressCountry": "CA"
+
+            },
+            "sameAs": [
+            "https://www.facebook.com/mapleheaptech",
+            "https://twitter.com/mapleheaptech",
+            "https://www.instagram.com/mapleheaptech"
+            ]
+            }
+        </script>
+        <script>            
+            var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+            var visitmhTrackVisit = (window.location.href.toLowerCase().startsWith('http://localhost')?'http://localhost:4141':'https://mhlink') + '/visitmh/track/visit';
+            xhr.open('POST', visitmhTrackVisit);
+            xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            xhr.setRequestHeader('code', '38152098-e0e4-4447-8b25-637eb591e72a');
+            xhr.setRequestHeader('linkVisited', window.location.href);
+            xhr.send();
+        </script>
+        <style>
+            .green-dot {  /* use on empty div */
+                width: 8px;
+                height: 8px;
+                background: #00FF00;
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- header -->
+        <header id="_header" class="position-relative bg-light shadow">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light px-lg-5 offset-lg-1 col-lg-10" style="z-index: 10;">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/img/logo.png" class="d-inline-block align-top" alt="MapleHeap Logo" style="width:250px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" title="Home" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" title="About Us" href="../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="how-starmh-platform-uses-deep-learning-techniques-for-predicting-future.html#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Services
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" title="action" href="../services/embedded-analytics-service-beta.html">Embedded Analytics Service</a>
+                                <a class="dropdown-item" title="action" href="../services/patient-monitoring-service.html">Patient Monitoring Service</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" title="action" href="../services/ride-sharing-service.html">Ride Sharing Service</a>
+                            </div>
+                        </li>
+                        <li class="nav-item  active">
+                            <a class="nav-link" title="Blogs" href="blog-list.html">Blog</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" title="Contact Us" href="../contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" title="Store" href="https://store.mapleheapservice.com/web/login.do" target="_blank">MapleHeap Store</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+<section>
+    <div class="p-lg-0 mt-5">
+        <div class="row w-100 m-0">
+            <div class="col-lg-6 offset-lg-3 text-center">
+                <h1 class="font-weight-bold">How StarMH platform uses Deep Learning techniques for predicting future</h1>
+                <p>This blog discusses the deep learning approach used in StarMH platform to forecast future in time series data. It also explains AI configuration available in StarMH admin application to perform the desired predictions.</p>
+                <p class="mb-2 text-primary">Atif Baig</p>
+                <span>1/15/2024 - 4 min read</span>
+                <div class="mt-5">
+                    <img src="../assets/img/blog/blog1.png" class="w-75">
+                </div>
+            </div>
+
+            <div class="col-lg-8 offset-lg-2 h6">
+                <div class="mt-5">
+                    <div class="step1 mb-5">
+                        <span>
+                            <p>
+                                StarMH dashboard can be used to perform deep learning analysis on time series data. It uses LSTM (Long Short-Term Memory) based RNN (Recurrent Neural Networks) for time series predictions. Using the historical data set, this deep learning approach could be used to train AI model so that it could get familiar with the historical patterns to make predictions for the desired period of time. 
+                            </p>
+                            <p>
+                                AI configuration for enabling model training for data associated with individual dashboard tiles is available in StarMH admin application. So, user has to login into StarMH admin application and navigate to the desired StarMH dashboard from below screen (which is also home page of StarMH admin application).
+                            </p>
+                        </span>
+                        <div class="mt-3">
+                            <img src="../assets/img/blog/step2-1.avif" alt="Add the desired StarMH table if it does exist already." class="w-100">
+                        </div>
+                    </div>
+
+                    <div class="step2 mb-5">
+                        <span>
+                            <p>
+                                Initially there is no StarMH dashboard in StartMH admin application. So, we have use to the upload button on top right corner to upload *.starmh design file which is created and downloaded from StarMH designer application. After upload a new design, we navigate to edit link where we can configure each dashboard tile so it that it can retrieve data from the desired StarMH table. Below is the StarMH admin application screen that shows tiles in each row of dashboard.
+                            </p>
+                        </span>
+                        <div class="mt-3">
+                            <img src="../assets/img/blog/step2-2.jpeg" alt="Configure the data upload preferences for the table in which data has to be ingested. " class="w-100">
+                        </div>
+                    </div>
+
+                    <div class="step3 mb-5">
+                        <span>
+                            <p>On clicking the edit configuration of first tile, we see below tile level configuration. We can enabled/disable AI predictions for any tile with a single click.</p>
+                        </span>
+                        <div class="mt-3">
+                            <img src="../assets/img/blog/step2-3.jpeg" alt="Review the documentation for data ingestion/upload API that is generated based on the table upload preferences." class="w-100">
+                        </div>
+                    </div>
+
+                    <div class="step4 mb-5">
+                        <span>
+                            <p>
+                                StarMH admin provides the above StarMH dashboard tile level AI configuration. Max prediction length and interval unit together determine desired time duration for which the prediction should be made. Timestamp column as the name suggests is the column that is used to associate each numeric value with a timestamp (as this analysis is performed on time series data). Please note that if we do not have sufficient historical data then we might not be able to get AI predictions for the desired period of time. This is because there is very little data to train AI model in such situations. Sometimes there might be missing values in the provided data set. To deal with those missing values, fill function configuration could be used which provides us with below options.
+                            </p>
+                        </span>
+                        <div class="mt-3 text-center">
+                            <img src="../assets/img/blog/step2-4.avif" alt="Develop RESTful API client in your favourite language that follows the API documentation generated in step 3." class="img-fluid">
+                        </div>
+                    </div>
+
+                    <div class="step5 mb-5">
+                        <span>
+                            <p><b class="">Linear Interpolation: </b>Estimate missing value based on the surrounding values </p>
+                            <p><b class="mt-2">Previous: </b>Fill missing value using previous value </p>
+                            <p><b class="mt-2">Next: </b>Fill missing value using next value </p>
+                        </span>
+                        <div class="mt-3">
+                            <img src="../assets/img/blog/step2-5.png" alt="Run the data ingestion process developed in step 4 and review the recent records in StarMH admin application." class="w-100">
+                        </div>
+                    </div>
+
+                    <div class="step6 mb-5">
+                        <span>
+                            We can enable AI for one or more columns using the above option on StarMH admin UI. However, it is important to make sure that it makes sense to make predictions for the selected columns based on the trends or patterns existing in the historical data. Below are column level AI settings.
+                        </span>
+                        <div class="mt-3 text-center">
+                            <img src="../assets/img/blog/step2-6.jpeg" alt="Develop RESTful API client in your favourite language that follows the API documentation generated in step 3." class="img-fluid">
+                        </div>
+                    </div>
+
+                    <div class="step7 mb-5">
+                        <span>
+                            Fill function on tile level acts as the default one for each column. However, if a fill function is selected on column level then that takes precedence over tile level configuration. If the predicted values are expected to be a whole number then that it could be ensured by ticking the checkbox in the above column settings dialog. Aggregation on column data can be performed using one of the below functions. Please choose the right aggregation function based on your requirements.
+                        </span>
+                        <div class="mt-3 text-center">
+                            <img src="../assets/img/blog/step2-7.avif" alt="Develop RESTful API client in your favourite language that follows the API documentation generated in step 3." class="img-fluid">
+                        </div>
+                    </div>
+
+                    <div class="step8">
+                        <span>
+                            <p>
+                                It is important to note that dynamic parameters can not be used in any condition for AI predictions. This is because deep learning model training and predictions are performed daily by StarMH AI module in background which is not aware of user sessions or any dynamic parameter. If you have a requirement to make predictions based on dynamic parameters such as user session variables (for example user id or company id), you might have to create dedicated dashboards for specific users in such cases.
+                            </p>
+                            <p>
+                                AI configuration for enabling model training for data associated with individual dashboard tiles is available in StarMH admin application. So, user has to login into StarMH admin application and navigate to the desired StarMH dashboard from below screen (which is also home page of StarMH admin application).
+                            </p>
+                        </span>
+                        <div class="mt-3">
+                            <img src="../assets/img/blog/step2-8.avif" alt="Add the desired StarMH table if it does exist already." class="w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>        <footer id="_footer">
+            <div class="pt-5 w-75 m-auto pb-5">
+	    <div class="row w-100 mt-5">
+	      <div class="col-lg-3 col-sm-12" style="text-align: left;">
+                  <img src="../assets/img/logo.png" class="d-inline-block align-top" alt="MapleHeap Logo" style="width:250px;">
+	      </div>
+	      <div class="col-lg-3 col-sm-12" style="text-align: left;">
+	        <b>Our Contact</b>
+	        <ul class="list-unstyled mt-3 text-black-50">
+	          <li>#60-180, 94 Ave, S.E, Calgary, AB T2J 3G8</li>
+	          <li>Mon-Fri: 9am-5pm</li>
+	          <li>
+	            Email: <a class="text-decoration-none" href="../cdn-cgi/l/email-protection.html#52212722223d2026123f33223e373a3733222637313a3c3d3e3d353b37217c313d3f"><span class="__cf_email__" data-cfemail="63101613130c1117230e02130f060b0602131706000b0d0c0f0c040a06104d000c0e">[email&#160;protected]</span></a>
+	          </li>
+	        </ul>
+	      </div>
+                <div class="col-lg-3 col-sm-12" style="text-align: left;">
+	        <b>Socials</b>
+	        <ul class="list-unstyled mt-3 text-black-50">
+	          <li>
+	          	<a href="https://www.facebook.com/" title="Facebook Page" class="align-items-center d-flex text-dark text-decoration-none">
+	          		<i class="fa-brands fa-facebook-square pr-2 fa-2x"></i> Facebook Page
+	          	</a>
+	          </li>
+	          <li>
+	          	<a href="https://twitter.com/" title="Twitter" class="align-items-center d-flex text-dark text-decoration-none">
+	          		<i class="fa-brands fa-twitter-square pr-2 fa-2x"></i> Twitter
+	          	</a>
+	          </li>
+	          <li>
+	            <a href="https://www.instagram.com/" title="Instagram Page" class="align-items-center d-flex text-dark text-decoration-none">
+	            	<i class="fa-brands fa-instagram pr-2 fa-2x"></i> Instagram Page
+	            </a>
+	          </li>
+	        </ul>
+	      </div>
+	      <div class="col-lg-3 col-sm-12" style="text-align: left;">
+	        <b>Subscribe</b>
+                <form id="visitmhSubscriptionForm" method="post">
+                    <div class="d-flex mt-3 mb-3">
+                      <input type="email" name="visitmhSubscriptionEmail" class="border-right-0 border-secondary form-control rounded-0" id="visitmhSubscriptionEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                      <input name="visitmhSubscriptionRedirectUrl" type="hidden"/>
+                      <button type="submit" class="border border-left-0 border-secondary btn rounded-0"><i class="fa fa-arrow-right"></i></button>
+                    </div>
+                </form>   
+                <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>            
+                    var subscriptionForm = document.getElementById('visitmhSubscriptionForm');
+                    subscriptionForm.action = (window.location.href.toLowerCase().startsWith('http://localhost')?'http://localhost:4141':'https://visitmh.mapleheapservice.com') + '/visitmh/website/subscribe/email/38152098-e0e4-4447-8b25-637eb591e72a';    
+                    document.querySelector('#visitmhSubscriptionForm input[name=visitmhSubscriptionRedirectUrl]').value = window.location.href;
+                </script>	        
+	      </div>
+	    </div>
+	  </div>
+	  <p class="m-0 p-0 pb-3 text-center">Copyright © 2024 MapleHeap Technologies Inc. All rights reserved.</p>
+        </footer>
+        <div class="chat-container">
+            <div class="fabs">
+                <div class="chat">
+                    <div class="chat_header">
+                        <div class="chat_option">
+                        <div class="header_img">
+                          <img src="../assets/img/robot.png"/>
+                          </div>
+                            <span id="chat_head">MapleHeap</span> <br> <span class="agent">Chatbot</span> <span class="agent">(<svg class="green-dot" xmlns="http://www.w3.org/2000/svg"><path fill="#00FF00" d="m2 12a10 10 0 1 1 10 10 10 10 0 0 1 -10-10z"/></svg> Online)</span>
+                        </div>
+                    </div>
+                    <div id="chat_converse" class="chat_conversion chat_converse" style="text-align:left;">
+                    </div>
+                    <div class="fab_field">
+                        <a id="fab_camera" class="fab"><i class="fa fa-camera" style="color:grey"></i></a>
+                        <a id="fab_send" class="fab"><i class="fa fa-paper-plane" style="color:grey"></i></a>
+                        <textarea id="chatSend" name="chat_message" disabled="" style="background-color: #eaf0f6;color:grey;" class="chat_field chat_message">&nbsp;&nbsp;Choose an option</textarea>
+                    </div>
+                </div>
+                <a id="prime" class="fab" style="color:white;">
+                    <i class="prime fa fa-comment"></i>
+                </a>
+            </div>
+        </div>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="../js/jquery-3.4.1.slim.min.js"></script>
+        <script src="../js/popper.min.js"></script>
+        <script src="../assets/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+        <script src="../js/main.js"></script>
+        <script src="../libs/chat/chat.js" type="text/javascript"></script>
+        <script src="../libs/chat/mapleheap-chat.js" type="text/javascript"></script>
+    </body>
+</html>
