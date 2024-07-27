@@ -144,8 +144,10 @@ function checkDeviceWidth() {
     if (width <= 480) {
         console.log(`Mobile device detected with width: ${width} pixels`);
         $('.chat-container .fabs').addClass('h-100');
+        $('.chat-container .chat_converse').addClass('h-100');
     } else {
         $('.chat-container .fabs').removeClass('h-100');
+        $('.chat-container .chat_converse').removeClass('h-100');
     }
 }
 
