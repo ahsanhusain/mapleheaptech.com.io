@@ -218,17 +218,24 @@
 	  <p class="m-0 p-0 pb-3 text-center">Copyright © 2024 MapleHeap Technologies Inc. All rights reserved.</p>
         </footer>
         <div class="chat-container">
-            <div class="fabs">
-                <div class="chat">
-                    <div class="chat_header">
-                        <div class="chat_option">
-                        <div class="header_img">
-                          <img src="assets/img/robot.png"/>
+            <div class="fabs h-100 m-0 p-1">
+                <div class="chat h-100">
+                    <div class="chat_header p-0">
+                        <div class="align-items-center p-4 chat_option d-flex justify-content-between">
+                        <div class="align-items-center d-flex justify-content-between">
+                        <div class="header_img mr-3">
+                          <img src="./assets/img/robot.png" loading="lazy" alt="MapleHeap Logo" class="m-0 p-0" />
                           </div>
-                            <span id="chat_head">MapleHeap</span> <br> <span class="agent">Chatbot</span> <span class="agent">(<svg class="green-dot" xmlns="http://www.w3.org/2000/svg"><path fill="#00FF00" d="m2 12a10 10 0 1 1 10 10 10 10 0 0 1 -10-10z"/></svg> Online)</span>
+                           <div>
+                                <span id="chat_head">MapleHeap</span><span class="agent">Chatbot</span> <span class="agent"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="fa fa-times fa-2x" onclick="toggleFab();"></span>
+                        </div>
                         </div>
                     </div>
-                    <div id="chat_converse" class="chat_conversion chat_converse" style="text-align:left;">
+                    <div id="chat_converse" class="chat_conversion h-100 chat_converse" style="text-align:left;">
                     </div>
                     <div class="fab_field">
                         <a id="fab_camera" class="fab"><i class="fa fa-camera" style="color:grey"></i></a>
@@ -236,10 +243,10 @@
                         <textarea id="chatSend" name="chat_message" disabled="" style="background-color: #eaf0f6;color:grey;" class="chat_field chat_message">&nbsp;&nbsp;Choose an option</textarea>
                     </div>
                 </div>
-                <a id="prime" class="fab" style="color:white;">
-                    <i class="prime fa fa-comment"></i>
-                </a>
             </div>
+            <a id="prime" class="fab fixed-bottom position-fixed mb-2 mr-0 mr-2" style="color:white;">
+                <i class="prime fa fa-comment"></i>
+            </a>
         </div>
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="js/jquery-3.4.1.slim.min.js"></script>
