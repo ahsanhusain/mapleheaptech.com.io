@@ -12,9 +12,11 @@ function toggleFab() {
     if ($('.chat-container .prime').hasClass('fa-close')) {
         showChat();
         $('.chat-container #prime').addClass('d-none')
+        $('body').addClass('overflow-hidden')
     } else {
         hideChat();
         $('.chat-container #prime').removeClass('d-none')
+        $('body').removeClass('overflow-hidden')
     }
 }
 function hideChat() {
